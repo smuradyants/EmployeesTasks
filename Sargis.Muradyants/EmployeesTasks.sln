@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeesTasks.Data", "EmployeesTasks.Data\EmployeesTasks.Data.csproj", "{803970FA-E083-4E5C-B7E5-26CDE179DEE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeesTasks.Data", "EmployeesTasks.Data\EmployeesTasks.Data.csproj", "{803970FA-E083-4E5C-B7E5-26CDE179DEE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeesTasks.Web", "EmployeesTasks.Web\EmployeesTasks.Web.csproj", "{9A262653-5D4E-455E-82E7-004B6441FABB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeesTasks.Web", "EmployeesTasks.Web\EmployeesTasks.Web.csproj", "{9A262653-5D4E-455E-82E7-004B6441FABB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
