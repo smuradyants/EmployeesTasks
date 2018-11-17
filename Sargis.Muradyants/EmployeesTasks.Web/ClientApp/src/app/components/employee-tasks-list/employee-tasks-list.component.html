@@ -1,0 +1,24 @@
+<h1>Employee Tasks</h1>
+
+<p *ngIf="!employeeTasks"><em>Loading...</em></p>
+
+<table class='table' *ngIf="employeeTasks">
+  <thead>
+    <tr>
+      <th>Employee Name</th>
+      <th>Priority Level</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let employeeTask of employeeTasks">
+      <td>
+        <a [routerLink]="['/employees/' + employeeTask.employeeId+'/' + employeeTask.id]">
+          <span class='glyphicon'></span>{{ employeeTask.title }}
+        </a>
+      </td>
+      <td>
+        <span>{{ employeeTask.priorityLevel.name }}</span>
+      </td>
+    </tr>
+  </tbody>
+</table>

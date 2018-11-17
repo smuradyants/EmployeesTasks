@@ -1,0 +1,74 @@
+<h1>Employee Task Details</h1>
+
+<p *ngIf="!employeeTask"><em>Loading...</em></p>
+
+<div *ngIf="employeeTask">
+
+  <div class="row">
+    <div class="col-md-4 order-md-2">
+     
+      <ul class="list-group mb-3">
+        <li class="list-group-item d-flex lh-condensed">
+          <div class="row">
+            <div class="col-md-6">
+              <h4 class="my-0">Title:</h4>
+            </div>
+            <div class="col-md-6">
+              <h5 class="text-muted">{{ employeeTask.title }}</h5>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item d-flex lh-condensed">
+          <div class="row">
+            <div class="col-md-6">
+              <h4 class="my-0">Description:</h4>
+            </div>
+            <div class="col-md-6">
+              <h5 class="text-muted">{{ employeeTask.description }}</h5>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item d-flex lh-condensed">
+          <div class="row">
+            <div class="col-md-6">
+              <h4 class="my-0">Estimate:</h4>
+            </div>
+            <div class="col-md-6">
+              <h5 class="text-muted">{{ employeeTask.estimate }}</h5>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item d-flex lh-condensed">
+          <div class="row">
+            <div class="col-md-6">
+              <h4 class="my-0">Employee Name:</h4>
+            </div>
+            <div class="col-md-6">
+              <h5 class="text-muted">{{ employeeTask.employee.name }}</h5>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item d-flex lh-condensed">
+          <div class="row">
+            <div class="col-md-6">
+              <h4 class="my-0">State:</h4>
+            </div>
+            <div class="col-md-6">
+              <h5 class="text-muted">{{ employeeTask.state.name }}</h5>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item d-flex lh-condensed">
+          <div class="row">
+            <div class="col-md-6">
+              <h4 class="my-0">Priority Level:</h4>
+            </div>
+            <div class="col-md-6">
+              <h5 class="text-muted">{{ employeeTask.priorityLevel.name }}</h5>
+            </div>
+          </div>
+        </li>
+      </ul>   
+    </div>  
+  </div>  
+</div>
